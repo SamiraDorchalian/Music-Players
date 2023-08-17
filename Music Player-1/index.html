@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player-1</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7c6cdc0cf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./images/3a69a3578090aed62476aacd5c052e63.webp" class="song-img">
+            <h1>K-pop</h1>
+            <p>(Korean: 케이팝)</p>
+            <audio id="song">
+                <source class="one" src="./music/jimin_bts_with_you 128.mp3" type="audio/mp3">
+                <source class="two" src="./music/Taehyung - Love Me Again (320).mp3" type="audio/mp3">
+                <source class="three" src="./music/TAEYANG - VIBE _Feat. Jimin of BTS_[bts-music.ir].mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPaulse()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
